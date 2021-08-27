@@ -41,11 +41,12 @@ elif random_number == 10:
 else:
   answer = "Error, please enter number between 1 and 9"
 
-# Error handling for if the name is left empty
-if name == "":
+# Error handling for if the name or question is left empty
+if question == "":
+  print("The Magic 8-Ball cannot provide a fortune unless you ask it something.")
+elif name == "":
   print("Question: " + question)
+  print("Magic 8-Ball's answer: " + answer)
 else:
   print(name + " asks: " + question)
-
-# Final answer
-print("Magic 8-Ball's answer: " + answer)
+  print("Magic 8-Ball's answer: " + answer)
